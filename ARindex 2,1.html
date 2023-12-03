@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="aframe/aframe.min.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-sky color="turquoise"></a-sky>
+			<a-circle
+				color="rgb(133,133,133)"
+				radius="1"
+				position="0 2 -3.5"
+				rotation="0 -45 0"
+				animation="property: rotation; to: 0 360 0; dur: 2000; loop: true"
+			></a-circle>
+			<a-cone
+				color="brown"
+				radius-bottom="2"
+				radius-top="0"
+				height="3"
+				position="1.5 2 -4.5"
+				animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true"
+			></a-cone>
+			<a-torus-knot
+				color="orange"
+				height="2.75"
+				wireframe="true"
+				theta-start="90"
+				theta-length="270"
+				side="double"
+				position="-1.5 2 -3.5"
+				animation="property: rotation; to: 0 360 0; dur: 9000; easing: linear; loop: true"
+			></a-torus-knot>
+			<a-icosahedron
+				color="#FF926B"
+				radius="0.5"
+				position="-2 1 -2"
+				animation="property: position; to: 2 1 -2; dur: 6000; easing: linear; loop: true"
+			></a-icosahedron>
+			<a-camera position="0 1.6 0" rotation="0 0 0"></a-camera>
+			<a-text value="Have a nice day!" position="-1 1 -1"></a-text>
+		</a-scene>
+	</body>
+</html>
